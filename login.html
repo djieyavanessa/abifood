@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Abi Food</title>
+    <link rel="stylesheet" href="foodStyle.css" type="text/css"> 
+</head>
+<body>
+    
+    <div class="conteneur">
+    <section>
+        <h1> Sign In</h1>
+        <p> sign in to see our culinary specialties</p>
+        <form id="myform">
+          <fieldset>
+              <table>
+           <tr>
+               
+                   <label for="email"> Email: </label> <br/>
+           </tr>
+           <tr>  
+            
+                 <input id="email" type="email" required="required">
+            
+             </tr> <br/>
+            <tr>
+                
+                    <label for="passwort">Passwort: </label>
+            </tr> <br/>
+                
+               <tr> <input id="passwort" type="passwort" required="required">
+              
+            </tr> <br/>
+          
+           </table> <br/>
+           <button type="submit"  onclick="window.location.href= 'home.html'"> SIGN IN</button>   <br/>
+           <p> Do not have an account? <a href="register.html">Sign Up </a> </p>
+            
+
+          </fieldset>
+        </form>
+
+        <script>
+            var formulaire = document.getElementById('myform');
+            formulaire.addEventListener('submit', fonctionForm);
+
+             function fonctionForm (){
+                 
+             }
+        </script>
+    </section>
+    </div>
+</body>
+</html>
