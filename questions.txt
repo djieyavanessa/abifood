@@ -1,0 +1,4 @@
+1) je vais mieux gerer la validation du formulairem avec les expression reguliere et la validite grace au javascript, mais ca ne donne pas
+2) je voudrais dabord que tout les champs soit bien saisie ( la qualite des donnes) et ne soit pas vide avant que le button sur lequel je clique m envoie 
+sur la page suivante ( celle que jai defini).
+3) pareil pour le login et register page
