@@ -1,0 +1,31 @@
+#header{
+    text-align: center;
+}
+.menu{
+border: 1px;
+}
+.blockmenu{
+  
+  border: 1px;
+  
+}
+#nav{
+    
+    margin-right: 1300px;
+    background-color: rgb(180, 240, 220);
+    padding-top: 20px;
+    
+}
+body{
+    background-color:rgb(202, 241, 228);
+}
+#footer{
+    
+    text-align: center;
+}
+.bordure{
+ border: 1px solid black; padding: 5px; }
+ a:link{
+    text-decoration:none; 
+ }
+ 

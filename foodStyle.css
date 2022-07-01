@@ -37,6 +37,9 @@ body {
     margin-right: 500px;
     
     }
+    #div2{
+        text-align: center;
+    }
     input{
         border-radius: 6px;
         width: 250px;
@@ -49,5 +52,14 @@ body {
     input:hover{
         background-color:aquamarine;
         
+    }
+    #Reset1{
+        background-color: red;
+        color: white;
+    }
+    #footer{
+    
+        text-align: center;
+        color: white;
     }
     

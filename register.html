@@ -6,103 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abifood Register</title>
     <link rel="stylesheet" href="foodStyle.css" type="text/css"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="logoAbifood.png">
 </head>
 <body>
 
 
       <div class="conteneur">
-        <section>
-            <h1> Sign Up</h1>
-            <p> Register before you can connect to the site</p>
-            <form id="myform"   action="resultat.php" method="post">
-              <fieldset>
-                <div>
-                    <label for="civilite"> Civilite:
-                    <input type="radio" id="Mr" name="drone" value="Mr"
-                           checked>
-                    <label for="Mr">Mr</label>
-                  
-
-                  
-                    <input type="radio" id="Mme" name="drone" value="Mme">
-                    <label for="dewey">Mme</label>
-                  
-
-                  
-                    <input type="radio" id="Mlle" name="drone" value="Mlle">
-                    <label for="louie">Mlle</label>
+        <section id="section" >
+            <div id="div1" > <br/>
+             <h1> Sign Up</h1>
+             <p> Register before you can connect to the site</p>
+             <form id="myform"   action="resultat.php" method="post">
+              
+                <div id="div2" >
+                 <label for="civilite"> Civilite:
+                     <table>
+                         <tr>
+                             <td> <input type="radio" id="Mr" name="drone" value="Mr"checked> </td>
+                             <td> <label for="Mr">Mr</label> </td>
+                         </tr>
+                         <tr> 
+                             <td> <input type="radio" id="Mme" name="drone" value="Mme"> </td>
+                             <td><label for="dewey">Mme</label> </td>
+                         </tr>
+                         <tr>
+                             <td> <input type="radio" id="Mlle" name="drone" value="Mlle"></td>
+                             <td> <label for="louie">Mlle</label> </td> 
+                        </tr>
+                      </table>
                     </label>
-                  </div>
+                </div>
 
-                  <table>
-                  
-                    <tr>
-                   
-                        <label for="nom"> Nom: </label> <br/>
+                <table>
+                 <tr>
+                  <label for="nom"> Nom: </label> <br/>
                 </tr>
                 <tr>  
+                  <input id="nom" type="text" required="required">
                  
-                      <input id="nom" type="text" required="required">
-                 
-                  </tr> <br/>
-                  <tr>
-                   
-                    <label for="prenom"> Prenom: </label> <br/>
-            </tr>
-            <tr>  
+                </tr> <br/>
+                <tr>
+                 <label for="prenom"> Prenom: </label> <br/>
+                </tr>
+                <tr>  
+                 <input id="prenom" type="text" required="required">
              
-                  <input id="prenom" type="text" required="required">
-             
-              </tr> <br/> 
-              <tr>
-                   
-                <label for="adresse"> Adresse: </label> <br/>
-        </tr>
-        <tr>  
-         
-              <input id="adresse" type="text" required="required">
-         
-          </tr> <br/>
-          <tr>
-                   
-            <label for="tel"> Telephone: </label> <br/>
-    </tr>
-    <tr>  
-     
-          <input id="tel" type="tel" required="required">
-     
-      </tr> <br/>
-
-
-
-
-
-
-               <tr>
-                   
-                       <label for="email"> Email: </label> <br/>
+                </tr> <br/> 
+                <tr>
+                 <label for="adresse"> Adresse: </label> <br/>
+                </tr>
+                <tr>  
+                  <input id="adresse" type="text" required="required">
+                </tr> <br/>
+                <tr>
+                  <label for="tel"> Telephone: </label> <br/>
+                </tr>
+                <tr>  
+                  <input id="tel" type="tel" required="required">
+                </tr> <br/>
+                <tr>
+                  <label for="email"> Email: </label> <br/>
                </tr>
                <tr>  
+                <input id="email" type="email" required="required" placeholder="Ex:arety@gmail.fr">
                 
-                     <input id="email" type="email" required="required" placeholder="Ex:arety@gmail.fr">
-                
-                 </tr> <br/>
+                </tr> <br/>
                 <tr>
-                    
-                        <label for="password">password: </label>
+                 <label for="password">password: </label>
                 </tr> <br/>
-                    
-                   <tr> <input id="password" type="password" required="required">
-                  
+                <tr> 
+                   <input id="password" type="password" required="required">
                 </tr> <br/>
-              
-               </table> <br/>
-               <button type="submit"  onclick="window.location.href= 'login.html'"> Submit</button>   
-               <input id="Reset1" type="reset" value="effacer"/>
-               <p> You  have an account? <a href="login.html">Return </a> </p>
+                  </table> <br/>
+               <button id="sign" type="submit"  onclick="window.location.href= 'login.html'"> Submit</button>   
+               <button id="Reset1" type="reset" value="effacer"> Reset </button>
+               <p> You  have an account? <a href="login.html">Return </a> </p> <br/>
                 
     
-              </fieldset>
+              
             </form>
-        </body>
+            </div>
+        </section>
+     </div>
+     <footer id="footer" >
+        <p> Copyright  Vanessa Lonyem</p>
+    </footer>
+ </body>
 </html>
