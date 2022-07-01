@@ -2,30 +2,121 @@
     text-align: center;
 }
 .menu{
-border: 1px;
-}
-.blockmenu{
-  
-  border: 1px;
-  
-}
-#nav{
     
-    margin-right: 1300px;
-    background-color: rgb(180, 240, 220);
-    padding-top: 20px;
+        display: flex;              /* Transformation en flexbox */
+        padding:0;                  /* Suppression des marges internes */
+        background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+        justify-content: center;
     
 }
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
 body{
     background-color:rgb(202, 241, 228);
 }
 #footer{
     
     text-align: center;
+    margin-bottom: 20px;
 }
-.bordure{
- border: 1px solid black; padding: 5px; }
- a:link{
-    text-decoration:none; 
- }
+
  
+ .menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: #1ABC9C;    /* Couleur d'arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #000 ; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+.p{
+    text-align: center;
+    color: #ed2794;
+}
+
+
+
+
+
+html{
+
+    scroll-padding-top: 5rem/*pour le saut de page, a ajuster selon les besoins*/
+    
+    }
+    
+    *{box-sizing: border-box}
+    
+    .slider-scroll {
+    
+    width: 600px;
+    max-width: 100%;
+    max-height:398px;
+    margin: 2rem auto;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    }
+    
+    .slider-scroll img {
+    scroll-snap-align: center;
+    min-width: 100%;
+     border-radius: 5px;
+        
+    }
+    
+    .ancre {
+        
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    
+    }
+        
+    .ancre li{
+        
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 30px;
+    height: 30px;
+    background: #404040;
+    border-radius: 50%;
+    }
+        
+    .ancre li a{color:white}
+        
+    .ancre li:not(:last-child){
+      margin-right: 30px;
+    }
+    
+    
+    .ancre li a:hover {
+      opacity: 0.5;
+    }
+
+
+
+
+    
+        
+    
